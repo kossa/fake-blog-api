@@ -26,4 +26,18 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /*
+    |------------------------------------------------------------------------------------
+    | SCopes
+    |------------------------------------------------------------------------------------
+    */
+    public function scopeAuthors($q)
+    {
+        return $q->where('role', 10);
+    }   
+    public function scopeVisitors($q)
+    {
+        return $q->where('role', 0);
+    }   
 }
