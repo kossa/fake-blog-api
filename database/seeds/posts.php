@@ -18,7 +18,7 @@ class posts extends Seeder
         
         Post::truncate();
         
-        $users = User::authors()->pluck('id')->toArray();
+        $users = User::author()->pluck('id')->toArray();
 
         $data = [];
         
