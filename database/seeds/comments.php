@@ -18,7 +18,7 @@ class comments extends Seeder
         
         Comment::truncate();
         
-        $users = User::visitors()->pluck('id')->toArray();
+        $users = User::visitor()->pluck('id')->toArray();
         $posts = Post::pluck('id')->toArray();
 
         $data = [];
