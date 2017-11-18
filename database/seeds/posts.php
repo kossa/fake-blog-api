@@ -1,5 +1,6 @@
 <?php
 
+use App\Category;
 use App\Post;
 use App\User;
 use Illuminate\Database\Seeder;
@@ -38,5 +39,18 @@ class posts extends Seeder
         }
         
         Post::insert($data);
+
+        $data = [];
+        $posts = Post::pluck('id')->toArray();
+        $categories = Category::pluck('id')->toArray();
+
+        for ($i=1; $i <= 100 ; $i++) { 
+            array_push($data, [
+                'post_id'     => $faker->randomElement($posts),
+                'category_id' => $faker->randomElement($categories),
+            ]);
+        }
+
+        \DB::table('category_post')->insert($data);
     }
 }

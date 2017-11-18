@@ -24,7 +24,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token', 'role', 'email', 'created_at', 'updated_at'
     ];
 
     /*
@@ -32,12 +32,16 @@ class User extends Authenticatable
     | SCopes
     |------------------------------------------------------------------------------------
     */
-    public function scopeAuthors($q)
+    public function scopeAuthor($q)
     {
         return $q->where('role', 10);
     }   
-    public function scopeVisitors($q)
+    public function scopeVisitor($q)
     {
         return $q->where('role', 0);
     }   
+    public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
 }
