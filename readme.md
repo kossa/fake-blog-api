@@ -26,17 +26,17 @@ php artisan serve # open your browser to http://127.0.0.1:8000
 > Note : You can also use directly http://fakeblog.bel4.com/
 
 ### API request for `Post` :
- Get [/posts](http://fakeblog.bel4.com/api/posts) : Get all posts
- Get [/posts/featured](http://fakeblog.bel4.com/api/posts/featured) : Get feauted posts
- Get [/posts/popular](http://fakeblog.bel4.com/api/posts/popular) : Get most visited posts
- Get [/posts/{post}/show](http://fakeblog.bel4.com/api/posts/1/show) : Get one post
- Get [/posts/{post}/comments](http://fakeblog.bel4.com/api/posts/1/comments) : Get comments of a given post
- Get [/posts/{post}/author](http://fakeblog.bel4.com/api/posts/1/author) : Get author of a given post
+ > Get [/posts](http://fakeblog.bel4.com/api/posts) : Get all posts
+ > Get [/posts/featured](http://fakeblog.bel4.com/api/posts/featured) : Get feauted posts
+ > Get [/posts/popular](http://fakeblog.bel4.com/api/posts/popular) : Get most visited posts
+ > Get [/posts/{post}/show](http://fakeblog.bel4.com/api/posts/1/show) : Get one post
+ > Get [/posts/{post}/comments](http://fakeblog.bel4.com/api/posts/1/comments) : Get comments of a given post
+ > Get [/posts/{post}/author](http://fakeblog.bel4.com/api/posts/1/author) : Get author of a given post
 
  ### API request for Author :
- Get [/authors](http://fakeblog.bel4.com/api/authors) : Get list of authors
- Get [/authors/{id}/show](http://fakeblog.bel4.com/api/authors/1/show) : Get an author 
- Get [/authors/{id}/posts](http://fakeblog.bel4.com/api/authors/1/posts) :  Get posts of an author
+ > Get [/authors](http://fakeblog.bel4.com/api/authors) : Get list of authors
+ > Get [/authors/{id}/show](http://fakeblog.bel4.com/api/authors/1/show) : Get an author 
+ > Get [/authors/{id}/posts](http://fakeblog.bel4.com/api/authors/1/posts) :  Get posts of an author
 
 ----------
 
