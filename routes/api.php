@@ -23,6 +23,6 @@ Route::get('posts/{post}/author', 'PostController@author'); // Get authors of a 
 
 Route::get('authors', 'AuthorController@index'); // Get authors
 Route::get('authors/{id}/show', 'AuthorController@show'); // Get an author
-Route::get('authors/{id}/posts', 'AuthorController@posts'); // Get an author
+Route::get('authors/{id}/posts', 'AuthorController@posts'); // Get posts of an author
 
 
