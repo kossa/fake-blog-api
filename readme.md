@@ -42,8 +42,8 @@ Get | [/authors/{id}/posts](http://fakeblog.bel4.com/api/authors/1/posts) |  Get
 
 
 ### Current data : 
-- `User` : Total of 20 user, 10 authors, 10 visitors
-- `Category` : 20 category
+- `User` : Total of 20 users, 10 authors, 10 visitors
+- `Category` : 20 categories
 - `Post` : 500 posts
 - `Comment` : 10 000 comments
 
