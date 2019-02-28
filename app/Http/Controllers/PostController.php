@@ -40,7 +40,7 @@ class PostController extends Controller
 
     /**
      * Get one article
-     * 
+     *
      * @param  int  $post
      * @return App\Post
      */
@@ -51,18 +51,18 @@ class PostController extends Controller
 
     /**
      * Get comments of given Post
-     * 
+     *
      * @param  int  $post
      * @return collection
      */
     public function comments(Post $post)
     {
-        return $post->comments()->paginate(30);
+        return $post->comments()->with('user')->paginate(30);
     }
 
     /**
      * Get author of given Post
-     * 
+     *
      * @param  int  $post
      * @return collection
      */
@@ -70,5 +70,4 @@ class PostController extends Controller
     {
         return $post->author;
     }
-
 }
